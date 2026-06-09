@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+    font-weight: 500 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 500 800;
+    font-style: italic;
+}
+
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--Yellow);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--White);
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 20px;
+    border-radius: 20px;
+
+    /* Offset-x | Offset-y | Blur-radius | Spread-radius | Color */
+    box-shadow: 8px 8px 0px 0px #000000;
+
+    /* Optional: To make it match the image perfectly */
+    border: 1px solid #000000;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.btn {
+    outline: 0;
+    border: 0;
+    background-color: var(--Yellow);
+    color: var(--Gray950);
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.card .published {
+    color: var(--Gray950);
+    font-weight: 500;
+}
+
+.card h1 {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--Gray950);
+}
+
+.card .description {
+    font-size: 18px;
+    color: var(--Gray500);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.profile img {
+    height: 5vh;
+}
+
+.profile h4 {
+    font-weight: 800;
+}
+
+.btn:hover {
+    background-color: hsl(47, 88%, 50%);
+}
+
+.image:hover {
+    width: 100%;
+    width: 350px;
+}
+
+
+/* For Mobile Design  */
+@media (max-width:375px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background: var(--White);
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    body {
+        font-size: 14px
+    }
+
+    .card .description {
+        font-size: 16px;
+    }
+
+    .card h1 {
+        font-size: 20px;
+        font-weight: 800;
+        color: var(--Gray950);
+    }
+
+    .btn:hover {
+        background-color: hsl(47, 88%, 50%);
+    }
+
+    .image:hover {
+        width: 100%;
+        width: 270px;
+    }
+
+}
