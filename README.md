@@ -15,7 +15,7 @@ Users should be able to:
 ### Screenshot
 
 
-![Blog Preview Card Screenshot](./assets/images/Screenshot.png)
+<img src="./assets/images/Screenshot.png" alt="Screenshot" width="600">
 
 
 
