@@ -15,7 +15,7 @@ Users should be able to:
 ### Screenshot
 
 
-<img src="./assets/images/Screenshot.png" alt="Screenshot" width="600">
+![Screenshot](./assets/images/Screenshot.png)
 
 
 
